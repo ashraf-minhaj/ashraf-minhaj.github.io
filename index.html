@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ashraf Minhaj</title>
+	<style type="text/css">
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #252F3E;
+			color: white;
+			padding: 20px;
+		}
+
+        .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        }
+
+        .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        }
+
+        .project {
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        bottom:0px;
+        align-items: center;
+        }
+
+        .project img {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+
+        .project h3 {
+        margin: 0;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        }
+
+        .project-description {
+        padding: 10px;
+        background-color: #FFD580;
+        text-align: center;
+        }
+
+		h1 {
+			margin: 0;
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #FF9900;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+		}
+
+		nav a:hover {
+			background-color: #666666;
+		}
+
+		section {
+			padding: 20px;
+			margin: 20px;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #d9d9d9;
+		}
+
+		section h2 {
+			font-size: 32px;
+			font-weight: bold;
+			margin: 0 0 20px 0;
+		}
+
+		section ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		section li {
+			margin-bottom: 10px;
+			padding-left: 10px;
+			background: url('dot.png') no-repeat left center;
+		}
+
+		footer {
+			background-color: #222222;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		footer p {
+			margin: 0;
+		}
+
+        .linkedin-link {
+            color: blue;
+        }
+        /* header img {
+            width: 100%;
+            position: relative;
+            z-index: -1;
+        } */
+
+        header {
+            background: url('banner.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 0.7;
+            }
+
+        .banner {
+            background-color: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            }
+
+        .banner h1 {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            }
+        
+        .job-title {
+            font-size: 18px;
+            font-style: italic;
+            margin: 0;
+        }   
+
+        #contact {
+            background-color: #f7f7f7;
+            padding: 40px;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #contact label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .linkedin-link:hover {
+        text-decoration: underline;
+        }
+        /* #skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skills-list li {
+            text-align: center;
+            margin: 10px;
+        } */
+	</style>
+
+
+</head>
+<body>
+	<header>
+        <div class="banner">
+          <h1>Ashraf Minhaj</h1>
+          <!-- <div></div> -->
+          <!-- <p class="job-title">R&D Engineer</p> -->
+        </div>
+      </header>      
+	<nav>
+		<a href="#about">About</a>
+        <a href="#experience">Experience</a>
+		<a href="#services">Services</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+        <a href="https://github.com/ashraf-minhaj">GitHub</a>
+	</nav>
+	<section id="about">
+		<h2>About Me</h2>
+		<p>From the color of it you can guess I love AWS. I am an R&D Engineer with 1 years of experience in AWS. I specialize in infrastructure as code, automation and currently learning DevOps practices.</p>
+	</section>
+    <section id="experience">
+		<h2>Experience</h2>
+		<ul>
+            <h3 href="https://www.programming-hero.com/">Programming Hero</h3>
+			<h4>• Senior Research and Development Engineer (Jan 2023-present)</h4>
+            <h4>• Research and Development Engineer (March 2022 - Dec 2022)</h4>
+            <h4>• Python Developer (Mar 2021 - Feb 2022)</h4>
+            <p>Helping the company to serve its video courses by desiging building the architecture of a VOD service using AWS resources such as EC2, Step Function, S3, ACM, Cloudfront, Route53, transcoding using FFMPEG with Python3, applying DRM using SHAKA Packager and automating the whole building process with Terraform, bash, Packer on CircleCi.</p>
+		</ul>
+	</section>
+	<section id="services">
+		<h2>Services</h2>
+		<ul>
+			<li>• Cloud architecture design</li>
+			<li>• Infrastructure as code</li>
+			<li>• Automation</li>
+			<li>• DevOps practices</li>
+			<li>• Python</li>
+            <li>• CI-CD</li>
+		</ul>
+	</section>
+	<section id="skills">
+        <h2>Skills</h2>
+        <table>
+            <!-- <tr>
+                <th>Skill</th>
+                <th>Tools/Frameworks</th>
+            </tr> -->
+            <tr>
+                <td>Cloud platform</td>
+                <td>: AWS</td>
+            </tr>
+            <tr>
+                <td>Infrastructure as Code</td>
+                <td>: Terraform, Packer</td>
+            </tr>
+            <tr>
+                <td>CI/CD</td>
+                <td>: CircleCI</td>
+            </tr>
+            <tr>
+                <td>Shell Scripting</td>
+                <td>: Bash</td>
+            </tr>
+            <tr>
+                <td>Programming Language</td>
+                <td>: Python3</td>
+            </tr>
+            <tr>
+                <td>Version Control</td>
+                <td>: Github</td>
+            </tr>
+            <tr>
+                <td>OS</td>
+                <td>: Linux, MacOS</td>
+            </tr>
+            <tr>
+                <td>Automation</td>
+                <td>: Selenium</td>
+            </tr>
+        </table>
+    </section>
+    
+      
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-description">
+				<p> Infrastructure written in Terraform, CI-CD in CircleCi. Simple image to text extraction project to demonstrate DevOps skills.</p>
+				<!-- <a href="https://project2.com">View Project</a> -->
+			</div>
+            <a href="https://github.com/ashraf-minhaj/Online-OCR">
+              <img src="online-ocr.png" alt="Online Image to Text Extractor">
+              <!-- <h3>Online Image to Text Extractor</h3> -->
+            </a>
+          </div>
+          <div class="project">
+            <div class="project-description">
+				<p>  Infrastructure written and provisioned by Terraform, a static site with html css and little bit JS hosted in AWS s3. </p>
+				<!-- <a href="https://project2.com">View Project</a> -->
+			</div>
+            <a href="https://github.com/ashraf-minhaj/Boring-Website">
+              <img src="boring-website.png" alt="Boring website">
+              <!-- <h3>Boring website</h3> -->
+            </a>
+          </div>
+          <!-- <div class="project">
+            <a href="#">
+              <img src="project3.jpg" alt="Project 3">
+              <h3>Project 3</h3>
+            </a>
+          </div>
+          <div class="project">
+            <a href="#">
+              <img src="project4.jpg" alt="Project 4">
+              <h3>Project 4</h3>
+            </a>
+          </div> -->
+        </div>
+      </section>  
+    <section id="Education">
+        <h2>Education</h2>
+            <label>
+                B.Sc. in Computer Science and Engineering, Britannia University (2022)
+            </label><br>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#">
+            <label>
+                <i class="fas fa-envelope"></i>
+                Email: ashraf_minhaj@yahoo.com, ashraf.minhaj.shahef@gmail.com
+            </label><br>
+            <label>
+                <i class="fab fa-linkedin"></i>
+                LinkedIn: <a href="https://www.linkedin.com/in/ashraf-minhaj/" class="linkedin-link">ashraf-minhaj</a>
+            </label><br>
+        </form>
+    </section>
+	<footer>
+		<p>Copyright © 2023 Ashraf Minhaj
+		<br>
+        <br>
+		<a href="#">Back to top</a></p>
+	</footer>
+</body>
+</html>
+
+
+
